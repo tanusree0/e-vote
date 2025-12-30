@@ -1,0 +1,93 @@
+:root {
+    --glass: rgba(255, 255, 255, 0.15);
+    --border: rgba(255, 255, 255, 0.2);
+    --text: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: var(--text);
+}
+
+h1 { margin-bottom: 0.5rem; font-size: 1.8rem; }
+p { margin-bottom: 2rem; opacity: 0.9; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input::placeholder { color: rgba(255, 255, 255, 0.6); }
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: none;
+    background: #fff;
+    color: #764ba2;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border);
+    padding: 15px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.card button {
+    width: auto;
+    padding: 8px 16px;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.slip-box {
+    background: #fff;
+    color: #333;
+    padding: 15px;
+    border-radius: 12px;
+    font-family: monospace;
+    margin: 20px 0;
+}

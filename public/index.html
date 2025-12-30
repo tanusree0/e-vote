@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat E-Vote | Secure Voting Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🇮🇳 Bharat E-Vote</h1>
+        
+        <div id="auth-box">
+            <h2 id="auth-title">Voter Login</h2>
+            
+            <div id="signup-fields" style="display:none;">
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="number" id="age" placeholder="Age (Must be 18+)">
+            </div>
+
+            <input type="text" id="aadhaar" placeholder="12 Digit Aadhaar Number">
+            <input type="password" id="pass" placeholder="Password">
+            
+            <button id="main-btn" onclick="handleAuth()">Enter Voting Booth</button>
+            
+            <p id="toggle-text" onclick="toggleAuth()">
+                New Voter? Register here.
+            </p>
+        </div>
+
+        <div id="booth" style="display:none;">
+            <div class="booth-header">
+                <h3>Select Your Candidate</h3>
+                <p id="voter-welcome"></p>
+            </div>
+            <hr style="border: 0.5px solid rgba(255,255,255,0.2); margin: 20px 0;">
+            <div id="candidate-list">
+                <div class="loading-text">Loading Candidates...</div>
+            </div>
+        </div>
+
+        <div id="success-panel" style="display:none;">
+            <div class="success-icon">✅</div>
+            <h2>Vote Recorded!</h2>
+            <p>Your digital voting slip has been generated.</p>
+            <div class="slip-box">
+                <span id="ref-id"></span>
+            </div>
+            <button onclick="window.location.reload()" style="background: rgba(255,255,255,0.2); color: white; border: 1px solid white;">Logout</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
