@@ -102,6 +102,9 @@ VOTING/
 - **Optimized Queries**: Uses indexed Aadhaar numbers for O(1) lookups during registration.
 - **Stateless**: JWT-based auth allows the backend to scale horizontally without session sync issues.
 ---
+## 🚀 Live Demo
+🔗 https://e-vote-44h4.onrender.com/
+---
 ## 🚀 Installation & Setup
 1. **Clone & Install**:
   ```
